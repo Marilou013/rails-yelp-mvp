@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+p {
+  line-height: 50px;
+}
+
+.btn {
+  border: solid, 2px !important;
+  border-color: black !important;
+}
+
+.center {
+  text-align: center;
+  margin-top: 16px;
+}
+
+h1, h2, p {
+  font-family: 'Poppins';
+  text-align: center;
+}
+
+h1 {
+
+}
+
+ul {
+  list-style: none;
+  padding: 0px !important;
+}
+
+.reviews {
+  padding: 0px 250px;
+}
