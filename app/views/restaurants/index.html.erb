@@ -1,17 +1,23 @@
-<div class= "center">
-  <h1>Restaurants</h1>
-    <br>
-    <ul>
-      <p>
-        <% @restaurants.each do |restaurant| %>
-          <li>
-          <strong><%= link_to restaurant.name, restaurant_path(restaurant) %></strong><br>
-          Address : <%= restaurant.address %> <br>
-          Speciality : <%= restaurant.category %>
-          </li>
-      </p>
-      <% end %>
-    </ul>
-    <br>
-<i class="fa-thin fa-plus"> <%= link_to "Add new restaurant", :new_restaurant %></i> 
+<div class="container">
+  <div class= "center">
+    <body>
+      <h1>Restaurants</h1>
+        <br>
+        <ul>
+          <p>
+            <% @restaurants.each do |restaurant| %>
+              <li>
+              <div class="restaurant-name">
+              <strong><%= link_to restaurant.name, restaurant_path(restaurant) %></strong><br>
+              </div>
+              Address : <%= restaurant.address %> <br>
+              Speciality : <%= restaurant.category %>
+              </li>
+          </p>
+          <% end %>
+        </ul>
+        <br>
+      <i class="fa-thin fa-plus"> <%= link_to "Add new restaurant", :new_restaurant %></i>
+    </body>
+  </div>
 </div>
